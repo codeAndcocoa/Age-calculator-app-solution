@@ -135,7 +135,7 @@ input[type=number] {
 h1 {
   font-family: "Poppins Extra Bold Italic";
   color: var(--neutral-color5);
-  font: 5em;
+  font-size: 5em;
 }
 
 h1 .numbers {
