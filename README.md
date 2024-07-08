@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution Repo](https://github.com/codeAndcocoa/Age-calculator-app-solution.git)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Live Site URL: [Live site](https://codeandcocoa.github.io/Age-calculator-app-solution/)
 
 ## My process
 
