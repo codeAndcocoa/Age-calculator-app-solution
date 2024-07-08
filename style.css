@@ -1,1 +1,254 @@
+/* Fonts */
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins Extra Bold";
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Poppins Italic";
+  src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+  font-family: "Poppins Bold Italic";
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "Poppins Extra Bold italic";
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+:root {
+  --primary-color1: hsl(259, 100%, 65%); /* Purple  */
+  --primary-color2: hsl(0, 100%, 67%); /* Light red */
+  --neutral-color1: hsl(0, 0%, 100%); /* White  */
+  --neutral-color2: hsl(0, 0%, 94%); /* Off white */
+  --neutral-color3: hsl(0, 0%, 86%); /* Light grey  */
+  --neutral-color4: hsl(0, 1%, 44%); /* Smokey grey */
+  --neutral-color5: hsl(0, 0%, 8%); /* Off black */
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--neutral-color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.age-box {
+  background-color: var(--neutral-color1);
+  width: 45%;
+  height: 65%;
+  padding: 2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 100px;
+}
+
+.day-input,
+.month-input,
+.year-input {
+  width: 110px;
+  height: 70px;
+  font-family: "Poppins Bold";
+  font-size: 1em;
+  color: var(--neutral-color5);
+}
+.day-input label,
+.month-input label,
+.year-input label {
+  letter-spacing: 0.2rem;
+}
+.day-input input,
+.month-input input,
+.year-input input {
+  margin-top: -0.3rem;
+  appearance: none;
+}
+ input[type="number"]:focus{
+  outline: none;
+   border: 2px solid var(--primary-color1);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+  
+}
+::placeholder {
+  font-size: 2em;
+}
+.invalid-feedback{
+  font-family: 'Poppins Regular';
+  font-size: 0.70em;
+  color: var(--primary-color2);
+  
+}
+.horizontal-break {
+  width: 100%;
+}
+.horizontal-break hr {
+  width: 86%;
+}
+.horizontal-break .arrow {
+  padding: 1rem;
+  background-color: var(--primary-color1);
+  border-radius: 50%;
+  right: 1rem;
+  top: -2.2rem;
+  cursor: pointer;
+}
+.horizontal-break .arrow:hover
+{
+  background-color: var(--neutral-color5);
+}
+.horizontal-break img {
+  width: 35px;
+
+}
+
+h1 {
+  font-family: "Poppins Extra Bold Italic";
+  color: var(--neutral-color5);
+  font: 5em;
+}
+
+h1 .numbers {
+  color: var(--primary-color1);
+}
+
+
+
+/*Media Queries*/
+@media screen and (width >=1440px) {
+  .horizontal-break hr {
+    width: 90%;
+  }
+  h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (width >=1200px) and (width < 1440px) {
+  .horizontal-break hr {
+    width: 85%;
+  }
+  h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (width <= 1200px) and (width >= 991px) {
+  .age-box {
+    width: 65%;
+    height: 50%;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 4.2em;
+  }
+}
+
+@media screen and (width <= 992px) {
+  .age-box {
+    width: 70%;
+    padding: 1.8rem;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .age-box {
+    width: 80%;
+    padding: 2rem 1.5rem;
+  }
+  .horizontal-break hr {
+    width: 100%;
+  }
+  .horizontal-break img {
+    width: 30px;
+  }
+  .horizontal-break .arrow {
+    right: 45%;
+  }
+  h1 {
+    font-size: 4.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .age-box {
+    width: 93%;
+    padding: 1.8rem 0.6rem;
+  }
+  .date-input {
+    width: 90%;
+    margin: auto;
+  }
+  .horizontal-break .arrow {
+    right: 42%;
+    top: -2rem;
+  }
+  .horizontal-break img {
+    width: 23px;
+  }
+
+  ::placeholder {
+    font-size: 1.4em;
+  }
+  h1 {
+    font-size: 3.7em;
+    margin-left: 1rem;
+  }
+}
+
+/* Heights Media queries */
+
+@media screen and (height >= 1300px) {
+  body {
+    height: 85vh;
+  }
+}
+
+@media screen and (height <= 600px) {
+  .age-box {
+    height: 90%;
+  }
+}
+
+@media screen and (height < 480px) {
+  body {
+    height: 105vh;
+  }
+  .age-box {
+    min-height: 100%;
+  }
+  .horizontal-break img {
+    width: 23px;
+  }
+  h1 {
+    font-size: 2.3em;
+  }
+}
 
