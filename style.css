@@ -111,9 +111,11 @@ input[type=number] {
 }
 .horizontal-break {
   width: 100%;
+
 }
 .horizontal-break hr {
   width: 86%;
+  margin-top: calc(5rem - 2px);
 }
 .horizontal-break .arrow {
   padding: 1rem;
@@ -140,6 +142,8 @@ h1 {
 
 h1 .numbers {
   color: var(--primary-color1);
+  font-family: "Poppins Extra Bold Italic";
+  
 }
 
 
@@ -149,7 +153,7 @@ h1 .numbers {
   .horizontal-break hr {
     width: 90%;
   }
-  h1 {
+  h1  {
     font-size: 5em;
   }
 }
@@ -167,7 +171,7 @@ h1 .numbers {
     height: 50%;
     padding: 2rem;
   }
-  h1 {
+  h1  {
     font-size: 4.2em;
   }
 }
@@ -235,6 +239,7 @@ h1 .numbers {
   .age-box {
     height: 90%;
   }
+  
 }
 
 @media screen and (height < 480px) {
@@ -244,6 +249,7 @@ h1 .numbers {
   .age-box {
     min-height: 100%;
   }
+ 
   .horizontal-break img {
     width: 23px;
   }
@@ -251,4 +257,3 @@ h1 .numbers {
     font-size: 2.3em;
   }
 }
-
